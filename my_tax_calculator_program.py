@@ -60,42 +60,53 @@ print("What's Your Gender?")
 print("1: Female")
 print("Or")
 print("2: Male")
-print("\n")
+print("Or")
+print("ESC to exit!")
+
 choice=raw_input("Select your gender:")
+#This while loop basically is checking the condition until you press the esc to exit from this program
+while choice != '':
 
-taxable_amount=0
-exempted_amount=0
-yearly_gross_salary=0
-total_tax_amount=0
-if choice=="1" or choice=="2":
-    # I have kept this outside of choice because this raw input will be used for both genders
-    yearly_gross_salary=int(raw_input("Enter your yearly salary:\n"))
+    taxable_amount=0
+    exempted_amount=0
+    yearly_gross_salary=0
+    total_tax_amount=0
+    #This if else condition is based on valid inputs
+    if choice=="1" or choice=="2":
+        # I have kept this outside of choice because this raw input will be used for both genders
+        yearly_gross_salary=int(raw_input("Enter your yearly salary:\n"))
 
-    if choice== "1":
-        print(" Here tax calculation for a female starts:\n")
-        exempted_amount=250000
-    elif choice== "2":
-        print(" Here tax calculation for a male starts:\n")
-        exempted_amount=220000
-else:
-    print"you have entered wrong option!!!"
-    exit(0)
+        if choice== "1":
+            print(" Here tax calculation for a female starts:\n")
+            exempted_amount=250000
+        elif choice== "2":
+            print(" Here tax calculation for a male starts:\n")
+            exempted_amount=220000
 
+            taxable_amount= taxable_amount_after_exemtion(yearly_gross_salary,exempted_amount)
 
-taxable_amount= taxable_amount_after_exemtion(yearly_gross_salary,exempted_amount)
+        print"\tYour yearly gross salary is: %d\n"%(yearly_gross_salary)
+        print"\tYour exempted amount is: %d\n"%(exempted_amount)
+        print"\tYour allowable expense is:%d\n"%(allowable_expense)
+        print"You can get your total taxable amount by:\n(yearly gross salary:%d \n - exempted amount:%d \n - alllowable expense %d)"\
+             %(yearly_gross_salary,exempted_amount,allowable_expense)
+        print(40*".")
+        print"So your total taxable amount is:%d"%(taxable_amount)
+        print"\n"
+        total_tax_amount=calculate_tax_on_taxable_amount(taxable_amount)
+        print"\n"
+        print(40*".")
+        print"And your total tax amount is:%d"%(total_tax_amount)
+    else:
+        print "you have entered wrong option!!!\n\n"
 
-print"\tYour yearly gross salary is: %d\n"%(yearly_gross_salary)
-print"\tYour exempted amount is: %d\n"%(exempted_amount)
-print"\tYour allowable expense is:%d\n"%(allowable_expense)
-print"You can get your total taxable amount by:\n(yearly gross salary:%d \n - exempted amount:%d \n - alllowable expense %d)"\
-     %(yearly_gross_salary,exempted_amount,allowable_expense)
-print(40*".")
-print"So your total taxable amount is:%d"%(taxable_amount)
-print"\n"
-total_tax_amount=calculate_tax_on_taxable_amount(taxable_amount)
-print"\n"
-print(40*".")
-print"And your total tax amount is:%d"%(total_tax_amount)
+    print(30*".")
+    print("\n")
+    print("What's Your Gender?")
+    print("1: Female")
+    print("Or")
+    print("2: Male")
+    print("Or")
+    print("ESC to exit!")
 
-
-
+    choice=raw_input("Select your gender:")
