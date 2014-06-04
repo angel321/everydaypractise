@@ -233,7 +233,7 @@ def add_adn_average(*numbers):
     return [sum, sum/len(numbers)]
 
 result, average = add_adn_average(1,2,3,4,5)
-print "The result is %d and %d"%(result, average)
+print "The result is %d and %d"/n%(result, average)
 
 
 # This is a code for summation using raw input
