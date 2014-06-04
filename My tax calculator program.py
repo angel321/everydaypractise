@@ -1,9 +1,17 @@
+# I have kept this amount in a global variable because it will be used for all
 allowable_expense=240000
 
 def taxable_amount_after_exemtion(yearly_gross_salary,exempted_amount):
+    """
+    I am defining  function which calculates total taxable amount
+    """
     return yearly_gross_salary-exempted_amount-allowable_expense
 
+
 def calculate_tax_on_taxable_amount(taxable_amount):
+    """
+    I am defining a function which calculates total amount of tax on taxable amount
+    """
     total_tax_amount=0
     if taxable_amount<0:
         print"You do not have to pay any tax"
@@ -60,6 +68,7 @@ exempted_amount=0
 yearly_gross_salary=0
 total_tax_amount=0
 
+# I have kept this outside of choice because this raw input will be used for both genders
 yearly_gross_salary=int(raw_input("Enter your yearly salary:\n"))
 
 if choice== "1":

@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="angel_python_datatype_.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="angel_python_datatype_.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angel_python_datatype_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="26" selection-start="5754" selection-end="5754" vertical-scroll-proportion="0.34590164" vertical-offset="3886" max-vertical-offset="6239">
+            <state line="241" column="26" selection-start="5754" selection-end="5754" vertical-scroll-proportion="0.0" vertical-offset="3886" max-vertical-offset="6239">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="My tax calculator program.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="My tax calculator program.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/My tax calculator program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="26" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
+            <state line="94" column="16" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.33114755" vertical-offset="1396" max-vertical-offset="2006">
               <folding />
             </state>
           </provider>
@@ -72,8 +72,8 @@
         <option value="$PROJECT_DIR$/angel_test_file.py" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$USER_HOME$/.PyCharm30/system/python_stubs/-762174762/__builtin__.py" />
-        <option value="$PROJECT_DIR$/My tax calculator program.py" />
         <option value="$PROJECT_DIR$/angel_python_datatype_.py" />
+        <option value="$PROJECT_DIR$/My tax calculator program.py" />
       </list>
     </option>
   </component>
@@ -387,16 +387,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My tax calculator program.py">
+    <entry file="file://$PROJECT_DIR$/angel_python_datatype_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="26" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
+        <state line="241" column="26" selection-start="5754" selection-end="5754" vertical-scroll-proportion="0.0" vertical-offset="3886" max-vertical-offset="6239">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angel_python_datatype_.py">
+    <entry file="file://$PROJECT_DIR$/My tax calculator program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="26" selection-start="5754" selection-end="5754" vertical-scroll-proportion="0.34590164" vertical-offset="3886" max-vertical-offset="6239">
+        <state line="94" column="16" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.33114755" vertical-offset="1396" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
