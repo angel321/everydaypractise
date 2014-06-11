@@ -235,7 +235,7 @@ def add_adn_average(*numbers):
 result, average = add_adn_average(1,2,3,4,5)
 print "The result is %d and %d"/n%(result, average)
 
-"""
+
 # This is a code for summation using raw input
 def add(*numbers):
     sum=0
@@ -253,4 +253,107 @@ print"The result is %d"%(result)
 
 
 
+# In this code we have declared an empty array then appended some elements in the list, then took some raw inputs added the raw inputs
+# in the element, added and averaged and then printed
+elements = []
+
+# then use the range function to do 0 to 5 counts
+for i in range(0, 6):
+    print "Adding %d to the list." % i
+    # append is a function that lists understand
+    elements.append(i)
+
+# now we can print them out too
+for i in elements:
+    print "Element was: %d" % i
+while elements != '':
+    try:
+        extra_number=int(raw_input("Enter number:"))
+        elements.append(extra_number)
+    except:
+        break
+
+def add_and_avg(elements):
+    sum=0
+    average=0
+    for number in elements:
+        sum+=(number)
+    return [sum, sum/len(elements)]
+result,average=add_and_avg(elements)
+
+print "The sum and average results are: %d %d"%(result,average)
+
+
+#The string converted into items in the list
+number_as_string= "1 2 3 4 5 6 7"
+print"Let's do some string manipulation"
+
+number_as_string2= number_as_string.split(' ')
+List1=["10","20","30","40"]
+
+print"The length of the list1 is: %d"%len(List1)
+while len(number_as_string2)!=9:
+    List2=List1.pop()
+    print"Adding next item to the number_as_string now:",List2
+    number_as_string2.append(List2)
+    print"There are %d items now in the list: "%len(number_as_string2)
+print"The list goes like this now",number_as_string2
+print number_as_string2[2]
+print number_as_string2[-1]
+print number_as_string2.pop(-1)
+print "?".join(number_as_string2[2:4])
+
+
+# create a mapping of state to abbreviation
+states = {
+    'Oregon': 'OR',
+    'Florida': 'FL',
+    'California': 'CA',
+    'New York': 'NY',
+    'Michigan': 'MI'
+}
+
+# create a basic set of states and some cities in them
+cities = {
+    'CA': 'San Francisco',
+    'MI': 'Detroit',
+    'FL': 'Jacksonville'
+}
+
+# add some more cities
+cities['NY'] = 'New York'
+cities['OR'] = 'Portland'
+
+# print out some cities
+print '-' * 10
+print "NY State has: ", cities['NY']
+print "OR State has: ", cities['OR']
+
+# print some states
+print '-' * 10
+print "Michigan's abbreviation is: ", states['Michigan']
+print "Florida's abbreviation is: ", states['Florida']
+
+# do it by using the state then cities dict
+print '-' * 10
+print "Michigan has: ", cities[states['Michigan']]
+print "Florida has: ", cities[states['Florida']]
+
+# print every state abbreviation
+print '-' * 10
+for state, abbrev in states.items():
+    print "%s is abbreviated %s" % (state,abbrev)
+
+# print every city in state
+print '-' * 10
+for abbrev, city in cities.items():
+    print "%s has the city %s" % (abbrev, city)
+
+# now do both at the same time
+print '-' * 10
+for state, abbrev in states.items():
+    print "%s state is abbreviated %s and has city %s" % (
+        state, abbrev, cities[abbrev])
+
+"""
 

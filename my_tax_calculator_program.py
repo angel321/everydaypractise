@@ -79,11 +79,12 @@ while choice != '':
         if choice== "1":
             print(" Here tax calculation for a female starts:\n")
             exempted_amount=250000
+
         elif choice== "2":
             print(" Here tax calculation for a male starts:\n")
             exempted_amount=220000
 
-            taxable_amount= taxable_amount_after_exemtion(yearly_gross_salary,exempted_amount)
+        taxable_amount= taxable_amount_after_exemtion(yearly_gross_salary,exempted_amount)
 
         print"\tYour yearly gross salary is: %d\n"%(yearly_gross_salary)
         print"\tYour exempted amount is: %d\n"%(exempted_amount)
