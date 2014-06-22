@@ -357,3 +357,11 @@ for state, abbrev in states.items():
 
 """
 
+Employeeinfo={'Angel':{'Name':'Afrig Angel','Age':'27','Occupation':'SQA Eng'},'Reshad':{'Name':'Resahad Raihan','Age':'29','Occupation':'SQA Eng'}}
+for key, value in Employeeinfo.items():
+    print"Show me the employee info: %s\n %s"%(key,value)
+
+information1=Employeeinfo.get('Angel')
+print "I want to show single info",information1
+
+
