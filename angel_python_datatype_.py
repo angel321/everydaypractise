@@ -355,13 +355,38 @@ for state, abbrev in states.items():
     print "%s state is abbreviated %s and has city %s" % (
         state, abbrev, cities[abbrev])
 
-"""
+
 
 Employeeinfo={'Angel':{'Name':'Afrig Angel','Age':'27','Occupation':'SQA Eng'},'Reshad':{'Name':'Resahad Raihan','Age':'29','Occupation':'SQA Eng'}}
 for key, value in Employeeinfo.items():
     print"Show me the employee info: %s\n %s"%(key,value)
 
 information1=Employeeinfo.get('Angel')
-print "I want to show single info",information1
+print "I want to show single info:",information1
+
+information2=Employeeinfo.get('XYZ','This is not a valid attribute')
+print "If not valid then print this message:",information2
+
+
+professionalinfo= {'Name':'Angel',
+     'Age':  '27',
+     'Occupation': 'SQA',
+     'yearsofexp':'3'
+
+}
+
+personalinfo= {'Home-residence':'uttara',
+               'sector':'13',
+               'road':'4',
+               'house':'36'}
+
+for key,value in professionalinfo.items():
+    print "give me your professional info:",(key,value)
+
+
+print "Angel who is %s years old who lives in %s" %(professionalinfo['Age'], personalinfo['Home-residence']
+)
+
+"""
 
 
