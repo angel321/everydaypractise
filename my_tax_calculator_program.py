@@ -64,8 +64,9 @@ print("Or")
 print("ESC to exit!")
 
 choice=raw_input("Select your gender:")
+
 #This while loop basically is checking the condition until you press the esc to exit from this program
-while choice != '':
+while choice != '' and choice != '\x1b':
 
     taxable_amount=0
     exempted_amount=0
