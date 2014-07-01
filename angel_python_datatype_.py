@@ -389,4 +389,9 @@ print "Angel who is %s years old who lives in %s" %(professionalinfo['Age'], per
 
 """
 
+import my_tax_calculator_program
+
+print my_tax_calculator_program.allowable_expense
+print my_tax_calculator_program.calculate_tax_on_taxable_amount(400000)
+
 
