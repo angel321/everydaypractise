@@ -1,2 +1,0 @@
-class Personalinfo:
-    def_
