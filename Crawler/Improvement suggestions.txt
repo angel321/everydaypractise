@@ -1,0 +1,10 @@
+Improvement scopes
+__________________
+
+1. In the program, we are fetching the url argument through urllib2.urlopen(url) and driver.get(url) libraries which depicts the same urls are being fed through two different libraries. It could be refactored in a more effective way using more compatible  libraries and smart coding. But as the implementation has been percolated through urllib2, webdriver and on mac osx and due to having a sort of window of knowledge the compatibility of these libraries across different platforms; it's not been refactored in that way.
+
+2. Many sites do possess some authentication features like (https) and for those cases we could impose some authentication handling in the code.
+
+3. We have introduced sleep for 2 seconds, meaning it needs to wait for a while in between per operation ( taking screenshots) so that site can handle the request. We could have introduced some random function where the process could have been much more faster even if the site is getting requests 50 requests at a time from the same ip so that the site does not need to think of the client's trusted authority need.
+
+4. Many sites expect to send some additional information in the header like cookie while sending the requests so that the server can process your request accordingly and send you the response. This program does not handle those kind of nitpickings.

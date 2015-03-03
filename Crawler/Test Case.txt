@@ -1,0 +1,50 @@
+Test Case
+_________
+
+Test Case -1
+Check if you are giving a valid url or not
+Valid: http://www.escenic.com
+Invalid: http://www.escggg.com
+
+Test Case -2
+Check if you are getting a valid number of screen capture shots
+valid- max: 10
+valid-min:1
+Invalid: a non integer number
+
+Test Case -3
+Check if your screenshots are getting saved in a defined directory or not
+valid: ./screenshots/
+validity here- If a folder named screenshot already exists then it will add the screenshots to this folder or else create a folder after this name
+
+Test Case -4
+Check the sequence of the screenshot is chronological or not
+Valid: 0-10
+
+Test Case -5
+Check the naming extension is correct or not
+Valid: jpeg[ Hardcoded in the program]
+Invalid: any other extension [ But this has not been programatically handled ]
+
+Test Case -6
+Check the error logic is triggering the correct error or not while crawling
+
+Test Case -7
+Check the content ( screenshots) of any specific site is correct or not
+
+Test Case -8
+Check if you miss the third argument to give in the command prompt it gives you the default max value as the screenshots or not
+Valid: 10
+Invalid: less then 10
+
+Test Case -9
+Check the parse logic is parsing the correct links or not
+Valid: <a href>
+Invalid: any other tag
+
+Test Case -10
+Check if you miss to give the second argument in the command line [ the url link] it prompts a correct message or not
+Valid: print message in the def_initiate()
+
+
+

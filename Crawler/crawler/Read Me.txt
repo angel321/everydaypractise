@@ -1,0 +1,13 @@
+General Usage Notes
+-------------------
+The code and the libraries used for the code are platform agnostic so that it can be run
+across all the platforms
+
+Instructions to Run The Program
+-------------------------------
+1. pip install beautifulsoup4
+2. pip install selenium
+3. brew install phantomjs
+4. go to the path directory where the program is stored from your terminal
+5. type-  python crawler.py http://www.escenic.com/ 5 
+6. if you type- python crawler.py http://www.escenic.com/ it will capture 10 screenshots according to the program written as the third argument is not mentioned in the terminal
